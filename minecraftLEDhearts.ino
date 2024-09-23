@@ -1,3 +1,4 @@
+//code made by smollosolos
 int hearts = 10;
 
 void setup() {
