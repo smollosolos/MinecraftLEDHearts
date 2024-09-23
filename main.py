@@ -57,7 +57,7 @@ while True:
         mainHeartColor = rgb_of_pixel(24 - 15, 10)
         for i in range(10):
             heartColor = rgb_of_pixel((i + 1) * 24 - 15, 10)
-            if heartColor == mainHeartColor:  # Code made by
+            if heartColor == mainHeartColor:  # Code made by smollosolos
                 hearts += 1
             else:
                 break
