@@ -14,8 +14,8 @@ hearts: int = 0
 last_hearts: int = 10
 
 # hearts screenshot location and size
-heartsImg_x: int = 1008
-heartsImg_y: int = 1323
+heartsImg_x: int = 687
+heartsImg_y: int = 963
 heartsImg_length: int = 243       # Make sure image is right up against hearts
 heartsImg_height: int = 27
 
@@ -35,7 +35,7 @@ serialInst.open()
 
 
 def get_hearts() -> None:
-    pyautogui.screenshot("hearts.png", region=(1008, 1323, 243, 27))
+    pyautogui.screenshot("hearts.png", region=(heartsImg_x, heartsImg_y, heartsImg_length, heartsImg_height))
 
 
 def rgb_of_pixel(x, y):
