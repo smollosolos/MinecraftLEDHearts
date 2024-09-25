@@ -9,7 +9,7 @@ ports = serial.tools.list_ports.comports()
 serialInst = serial.Serial()
 portsList = []
 
-
+waitTime: float = 0.5 #value dependent on different factors - If it doesn't work feel free to increase/decrease
 hearts: int = 0
 last_hearts: int = 10
 
@@ -65,4 +65,4 @@ while True:
             command = str(hearts)
             serialInst.write(command.encode('utf-8'))
             last_hearts = hearts
-        time.sleep(1.2)  # doesn't work with lower time - probably an arduino (memory?) issue; feel free to experiment
+        time.sleep(waitTime)
